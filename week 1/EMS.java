@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-class Employee  {
+class Employee implements Serializable {
     private String id;
     private String name;
     private String designation;
@@ -132,7 +132,7 @@ public class EMS {
             System.out.print("Enter your choice: ");
 
             int choice = sc.nextInt();
-            scanner.nextLine();
+            sc.nextLine();
 
             switch (choice) {
                 case 1:
